@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Video Stats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>YouTube Video Stats</h1>
+  </header>
+  
+  <main>
+    <form id="videoForm">
+      <label for="videoUrl">Enter YouTube Video URL:</label><br>
+      <input type="text" id="videoUrl" name="videoUrl" placeholder="https://www.youtube.com/watch?v=example" required>
+      <button type="submit">Get Stats</button>
+    </form>
+
+    <div class="result" id="result" style="display: none;">
+      <h2>Video Stats</h2>
+      <p><strong>Original Likes:</strong> <span id="originalLikes"></span></p>
+      <p><strong>Formatted Likes:</strong> <span id="formattedLikes"></span></p>
+      <p><strong>Original Views:</strong> <span id="originalViews"></span></p>
+      <p><strong>Formatted Views:</strong> <span id="formattedViews"></span></p>
+    </div>
+  </main>
+  
+  <footer>
+    <p>Powered by YouTube API</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
